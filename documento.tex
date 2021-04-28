@@ -1,0 +1,145 @@
+\documentclass[12pt,letterpaper]{article}
+
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{pgf}
+\usepackage{tikz}
+%\usepackage{algorithmicx}
+\usepackage{algpseudocode}
+\usepackage{color}
+\usepackage{amsmath}
+% \usepackage{bbm}
+\usepackage{txfonts}
+\usepackage{url}
+
+% \usepackage{pgflibraryarrows}
+% \usepackage{pgflibrarysnakes}
+% \usepackage{pgflibraryshapes}
+\usepackage{alltt}
+\usepackage{enumerate}
+\usetikzlibrary{automata,snakes,backgrounds,trees}
+
+\begin{document}
+
+\begin{eqnarray*}
+  n! = n \times (n - 1) \times (n - 2) \times \ldots \times 3 \times 2 \times 1
+\end{eqnarray*}
+
+\[
+  factorial(n) =
+  \begin{cases}
+    n = 0 , & 1 \\
+    \text{En otro caso}, & n * factorial(n - 1) \\
+  \end{cases}
+\]
+
+\begin{eqnarray*}
+  n = 0 & = & 1\\
+  n = 1 & = & 1 \\
+  n = 2 & = & 2 \times 1\\
+  n = 3 & = & 3 \times 2 \times 1 \\
+  n = 4 & = & 4 \times 3 \times 2 \times 1 \\
+  \ldots & \ldots & \ldots \\
+  n     & = & n \times (n - 1) \times (n - 2) \times \ldots \times 3 \times 2 \times 1 \\
+\end{eqnarray*}
+
+
+
+\begin{eqnarray*}
+  n = 0 & = & 1\\
+  n = 1 & = & 1 \times factorial(0) \\
+  n = 2 & = & 2 \times factorial(1)\\
+  n = 3 & = & 3 \times factorial(2) \\
+  n = 4 & = & 4 \times factorial(3) \\
+  \ldots & \ldots & \ldots \\
+  n     & = & n \times factorial(n - 1) \\
+\end{eqnarray*}
+
+
+% \begin{eqnarray*}
+%   a^0 & = & 1 = 1 \\
+%   a^1 & = & 1 \times a \\
+%   a^2 & = & 1 \times a \times a\\
+%   a^3 & = & 1 \times a \times a \times a \\
+%   \vdots & & \vdots \\
+%   a^n & = & 1 \times a \times a \times a \times \ldots \times a \\
+% \end{eqnarray*}
+
+% \begin{eqnarray*}
+%   a^0 & = & 1  \\
+%   a^1 & = & 1 \times a^0   \\
+%   a^2 & = & 1 \times a \times a^1 \equiv a \times a^1  \\
+%   a^3 & = & a \times a^2 \\
+%   a^4 & = & a \times a^3 \\
+%   \vdots & & \vdots \\
+%   a^n & = & a \times a^{n-1} \\
+% \end{eqnarray*}
+
+
+% \begin{eqnarray*}
+%   r^2 \leq n \wedge n < (r + a)^2
+% \end{eqnarray*}
+
+
+% \[
+%   iRaizEntera(n,a) =
+%   \begin{cases}
+%     a^2 > n, & 0 \\
+%     a^2 \leq n, & r' = iRaizEntera(n,2a)
+%     \begin{cases}
+%       n < (r' + a)^2, & r' \\
+%       n \leq (r' + a)^2, & r' + a \\
+%     \end{cases}
+%   \end{cases}
+% \]
+
+% \[
+%   ln(x) = \frac{(x-1)}{1} - \frac{(x-1)^2}{2} + \frac{(x-1)^3}{3} - \frac{(x-1)^4}{4} + \ldots 
+% \]
+
+% \[
+%   e^x = \sum^{\infty}_{n=1}{\frac{x^n}{n!}} \equiv 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + \ldots
+% \]
+
+% \[
+%   \sqrt{x} = \sqrt{a} + \frac{(x - a)}{1}\frac{1}{2\sqrt{a}} - 
+% \]
+
+
+% \begin{algorithmic}
+%   %\qocaption{Algoritmo babilónico}\label{algobabel}
+%   %\begin{algorithmic}[1]
+%     \Function{raiz}{$x$}
+%     \State {$r \gets x$}
+%     \State {$t \gets 0$}
+%     \While{$t \neq r$}
+%     \State {$t \gets r$}
+%     \State {$r \gets \frac{1}{2}(\frac{x}{r} + r)$}
+%     \EndWhile
+%     \State \textbf{return} $r$
+%     \EndFunction
+%   %\end{algorithmic}
+% \end{algorithmic}
+
+
+% \[
+%   a^n =  \begin{cases}
+%     a, & \text{Si }n=1\\
+%     (a^{\frac{n}{2}})^2 & \text{Si }n\ \text{es par} \\
+%     a \times a^{n-1} & \text{En caso contrario} \\
+%  \end{cases}
+% \]
+
+% \[
+%   A(m,n) = \begin{cases}
+%     n + 1, & \text{Si}\ m=0\\
+%     A(m-1,1) & \text{Si}\ m>0\ \text{y}\ n=0\\
+%     A(m-1,A(m,n-1) & \text{Si}\ m>0\ \text{y}\ n>0\\
+%     \end{cases}
+% \]
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
