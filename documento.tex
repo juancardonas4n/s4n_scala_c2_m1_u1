@@ -55,6 +55,22 @@
   n     & = & n \times factorial(n - 1) \\
 \end{eqnarray*}
 
+\begin{eqnarray*}
+  0 & = & 0\\
+  1 & = & 1 + 0\\
+  2 & = & 1 + 1 + 0 \\
+  3 & = & 1 + 1 + 1 + 0 \\
+  4 & = & 1 + 1 + 1 + 1 + 0 \\
+  \ldots & \ldots & \ldots \\
+\end{eqnarray*}
+
+\begin{eqnarray*}
+  0 & = & 0\\
+  1 & = & suc(0) \\
+  2 & = & suc(suc(0)) \\
+  3 & = & suc(suc(suc(0))) \\
+  4 & = & suc(suc(suc(suc(0)))) \\
+\end{eqnarray*}
 
 % \begin{eqnarray*}
 %   a^0 & = & 1 = 1 \\
@@ -81,17 +97,14 @@
 % \end{eqnarray*}
 
 
-% \[
-%   iRaizEntera(n,a) =
-%   \begin{cases}
-%     a^2 > n, & 0 \\
-%     a^2 \leq n, & r' = iRaizEntera(n,2a)
-%     \begin{cases}
-%       n < (r' + a)^2, & r' \\
-%       n \leq (r' + a)^2, & r' + a \\
-%     \end{cases}
-%   \end{cases}
-% \]
+\[
+  sumaRec(a,b) = 
+  \begin{cases}
+    a & b = 0\\
+    b & a = 0\\
+    sumaRec(incr(a),decr(b)) & \text{En otro casos} \\
+  \end{cases}
+\]
 
 % \[
 %   ln(x) = \frac{(x-1)}{1} - \frac{(x-1)^2}{2} + \frac{(x-1)^3}{3} - \frac{(x-1)^4}{4} + \ldots 
