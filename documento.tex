@@ -96,9 +96,26 @@
 \end{eqnarray*}
 
 
-% \begin{eqnarray*}
-%   r^2 \leq n \wedge n < (r + a)^2
-% \end{eqnarray*}
+\[
+  \sqrt{n}
+\]
+
+\begin{eqnarray*}
+  r^2 \leq n \wedge n < (r + a)^2
+\end{eqnarray*}
+
+
+\[
+  iRaizEntera(n,a) =
+  \begin{cases}
+    a^2 > n, & 0 \\
+    a^2 \leq n, & r' = iRaizEntera(n,2a)
+    \begin{cases}
+      n < (r' + a)^2, & r' \\
+      n \geq (r' + a)^2, & r' + a \\
+    \end{cases}
+  \end{cases}
+\]
 
 
 \[
