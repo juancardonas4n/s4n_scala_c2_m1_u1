@@ -1,0 +1,7 @@
+*~
+c2_m1_u1_videos_proceso/
+c2_m1_u1_videos_prospectos/
+*.aux
+*.log
+*.pdf
+.ipynb_checkpoints/
