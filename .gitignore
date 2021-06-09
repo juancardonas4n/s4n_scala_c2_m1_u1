@@ -5,3 +5,4 @@ c2_m1_u1_videos_prospectos/
 *.log
 *.pdf
 .ipynb_checkpoints/
+auto/
